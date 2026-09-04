@@ -3,131 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAK CORAT QUTABI - Ənənəvi Corat Ləzzəti</title>
-    <meta name="description" content="Ənənəvi dad, isti qutab və unudulmaz ləzzət. Pak Corat Qutabı rəsmi saytı.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-    
+    <title>PAK CORAT QUTABI | Ənənəvi Corat Dadı</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header / Navigation -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <span class="gold-text">PAK CORAT</span> QUTABI
-            </a>
-            
-            <nav class="nav-links" id="navLinks">
-                <a href="index.html" class="active">Ana səhifə</a>
-                <a href="menu.html">Menyu</a>
-                <a href="#about">Haqqımızda</a>
-                <a href="#contact">Əlaqə</a>
-                <a href="menu.html" class="btn-cta-nav">MENYU</a>
-            </nav>
+    <nav class="navbar">
+        <div class="container flex-between">
+            <a href="index.html" class="logo">PAK CORAT <span class="gold">QUTABI</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Ana səhifə</a></li>
+                <li><a href="menu.html">Menyu</a></li>
+                <li><a href="#about">Haqqımızda</a></li>
+                <li><a href="#contact">Əlaqə</a></li>
+                <li><a href="menu.html" class="btn-gold-small">MENYU</a></li>
+            </ul>
+            <div class="hamburger" id="menuToggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
 
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <header class="hero" style="background-image: url('assets/hero.jpg.png');">
+        <div class="hero-content container">
+            <h4 class="fade-in">Xoş gəlmisiniz</h4>
+            <h1 class="fade-in">PAK CORAT QUTABI</h1>
+            <p class="fade-in">Ənənəvi reseptlərlə hazırlanan isti Corat qutabları və dadlı təamlar.</p>
+            <div class="hero-btns fade-in">
+                <a href="menu.html" class="btn-gold">MENYUYA BAX</a>
+                <a href="#contact" class="btn-outline">ƏLAQƏ</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h2 class="hero-subtitle">Coratın ləzzəti</h2>
-            <h1 class="hero-title">PAK CORAT QUTABI</h1>
-            <p class="hero-description">Ənənəvi dad, isti qutab, unudulmaz ləzzət.</p>
-            <div class="hero-btns">
-                <a href="menu.html" class="btn btn-primary">MENYUYA BAX</a>
-                <a href="#contact" class="btn btn-outline">ƏLAQƏ</a>
-            </div>
-        </div>
-        <!-- Placeholder for hero image -->
-        <div class="hero-bg-img" style="background-image: url('assets/hero.jpg');"></div>
-    </section>
-
-    <!-- About Section -->
     <section class="section about" id="about">
-        <div class="container grid-2">
+        <div class="container grid">
+            <div class="about-img">
+                <img src="assets/et-qutab.jpg.png" alt="Pak Corat" onerror="this.src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80'">
+            </div>
             <div class="about-text">
-                <h3 class="section-tag">Haqqımızda</h3>
-                <h2 class="section-title">Həqiqi Corat <br><span class="gold-text">Qutabının Ünvanı</span></h2>
-                <p>Pak Corat Qutabı olaraq, biz sizə Azərbaycan mətbəxinin ən seçilən incilərini təqdim edirik. Uzun illərin təcrübəsi və xüsusi reseptimizlə hazırlanan qutablarımız, hər bir müştərimizə unudulmaz ləzzət bəxş edir.</p>
-                <p>Keyfiyyətli məhsullar, peşəkar ustalar və səmimi xidmət – bizim əsas prinsipimizdir.</p>
-            </div>
-            <div class="about-img-box">
-                <!-- Replace assets/et-qutab.jpg with your photo -->
-                <img src="assets/et-qutab.jpg" alt="Pak Corat Qutabi" class="rounded-img" onerror="this.src='https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=800&q=80'">
+                <h2 class="section-title">Həqiqi Corat Dadı</h2>
+                <p>Bizim qutablarımızı fərqləndirən əsas cəhət illərin sınağından keçmiş xüsusi hazırlanma qaydasıdır. Hər bir qutabda təmiz və keyfiyyətli məhsullardan istifadə olunur.</p>
+                <p>Ailənizlə və dostlarınızla birlikdə unudulmaz ləzzət anları yaşamaq üçün sizi gözləyirik.</p>
             </div>
         </div>
     </section>
 
-    <!-- QR Promo Section -->
-    <section class="section qr-promo">
-        <div class="container text-center">
+    <section class="section qr-section text-center">
+        <div class="container">
             <h2 class="section-title">QR MENYU</h2>
-            <p>Sifariş vermək indi daha asandır. <br> Telefonunuzun kamerası ilə QR kodu skan edin və menyumuza birbaşa baxın.</p>
-            <div class="qr-placeholder">
-                <!-- You can generate a QR pointing to your website URL later -->
-                <div class="qr-code-box">
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://your-domain.com/menu.html" alt="QR Menu" class="qr-img">
-                </div>
-                <p class="qr-hint">Skan edin: menu.html</p>
-            </div>
+            <p>Smartfonunuzla skan edin və menyunu birbaşa telefonunuzda görün.</p>
+            <div id="qrcode-container"><div id="qrcode"></div></div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="section contact" id="contact">
         <div class="container">
             <h2 class="section-title text-center">ƏLAQƏ</h2>
-            <div class="grid-3 contact-grid">
-                <div class="contact-card">
-                    <div class="icon">📍</div>
+            <div class="grid-3">
+                <div class="contact-box">
+                    <i class="icon">📍</i>
                     <h3>Ünvan</h3>
-                    <p>Ünvanınızı bura əlavə edin</p>
+                    <p>Corat qəsəbəsi, Sumqayıt</p>
                 </div>
-                <div class="contact-card">
-                    <div class="icon">📞</div>
+                <div class="contact-box">
+                    <i class="icon">📞</i>
                     <h3>Telefon</h3>
-                    <p>Telefon nömrənizi bura əlavə edin</p>
+                    <p>+994 55 787 86 02</p>
                 </div>
-                <div class="contact-card">
-                    <div class="icon">🕒</div>
+                <div class="contact-box">
+                    <i class="icon">🕒</i>
                     <h3>İş saatları</h3>
-                    <p>İş saatlarınızı bura əlavə edin</p>
+                    <p>09:00 - 23:00</p>
                 </div>
             </div>
-            
-            <div class="action-btns">
-                <!-- Replace with real phone/whatsapp links -->
-                <a href="tel:+994557878602" class="btn-action call">
-                    <span>📞</span> ZƏNG ET
-                </a>
-                <a href="https://wa.me/+994557878602" class="btn-action whatsapp">
-                    <span>💬</span> SİFARİŞ ET (WhatsApp)
-                </a>
+            <div class="contact-actions">
+                <a href="tel:+994557878602" class="btn-action call">📞 ZƏNG ET</a>
+                <a href="https://wa.me/994557878602" class="btn-action whatsapp">💬 WHATSAPP</a>
             </div>
-
-            <!-- Map Placeholder -->
             <div class="map-container">
-                <div class="map-placeholder-text">XƏRİTƏ BURADA YERLƏŞƏCƏK</div>
+                <!-- Sənin xəritə linkin bura əlavə olundu -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.641603511874!2d49.6953288!3d40.5826501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030917208953185%3A0xc3f9829280d2165b!2zUGFrIENvcmF0IFF1dGFiYQ!5e0!3m2!1saz!2saz!4v1709500000000" width="100%" height="450" style="border:0; border-radius:15px;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="container text-center">
-            <p>&copy; 2024 PAK CORAT QUTABI. Bütün hüquqlar qorunur.</p>
-        </div>
+    <footer class="footer text-center">
+        <p>&copy; 2024 PAK CORAT QUTABI. Hazırladı: Digital Menu System</p>
     </footer>
 
     <script src="script.js"></script>
