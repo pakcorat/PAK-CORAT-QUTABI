@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAK CORAT QUTABI | Ənənəvi Corat Dadı</title>
+    <title>PAK CORAT QUTABI | Keyfiyyətli və Təmiz Dad</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
@@ -12,83 +12,89 @@
     <nav class="navbar">
         <div class="container flex-between">
             <a href="index.html" class="logo">PAK CORAT <span class="gold">QUTABI</span></a>
-            <ul class="nav-links" id="navLinks">
+            <ul class="nav-links">
                 <li><a href="index.html">Ana səhifə</a></li>
                 <li><a href="menu.html">Menyu</a></li>
-                <li><a href="#about">Haqqımızda</a></li>
+                <li><a href="#features">Niyə biz?</a></li>
                 <li><a href="#contact">Əlaqə</a></li>
-                <li><a href="menu.html" class="btn-gold-small">MENYU</a></li>
             </ul>
-            <div class="hamburger" id="menuToggle"><span></span><span></span><span></span></div>
+            <a href="menu.html" class="btn-gold-small">MENYU</a>
         </div>
     </nav>
 
+    <!-- Hero: İştahaaçan, AI keyfiyyətində fon şəkli -->
     <header class="hero" style="background-image: url('assets/hero.jpg.png');">
-        <div class="hero-content container">
-            <h4 class="fade-in">Xoş gəlmisiniz</h4>
+        <div class="hero-content container text-center">
+            <h4 class="fade-in">Hər kəsin axtardığı o dad</h4>
             <h1 class="fade-in">PAK CORAT QUTABI</h1>
-            <p class="fade-in">Ənənəvi reseptlərlə hazırlanan isti Corat qutabları və dadlı təamlar.</p>
+            <p class="fade-in">Təmiz ət, təzə xəmir və Coratın ənənəvi gizli resepti.</p>
             <div class="hero-btns fade-in">
                 <a href="menu.html" class="btn-gold">MENYUYA BAX</a>
-                <a href="#contact" class="btn-outline">ƏLAQƏ</a>
+                <a href="https://wa.me/994557878602" class="btn-outline">SİFARİŞ ET</a>
             </div>
         </div>
     </header>
 
-    <section class="section about" id="about">
-        <div class="container grid">
-            <div class="about-img">
-                <img src="assets/et-qutab.jpg.png" alt="Pak Corat" onerror="this.src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80'">
-            </div>
-            <div class="about-text">
-                <h2 class="section-title">Həqiqi Corat Dadı</h2>
-                <p>Bizim qutablarımızı fərqləndirən əsas cəhət illərin sınağından keçmiş xüsusi hazırlanma qaydasıdır. Hər bir qutabda təmiz və keyfiyyətli məhsullardan istifadə olunur.</p>
-                <p>Ailənizlə və dostlarınızla birlikdə unudulmaz ləzzət anları yaşamaq üçün sizi gözləyirik.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section qr-section text-center">
+    <!-- NİYƏ BİZ? (İngridientlərin keyfiyyəti) -->
+    <section class="section features" id="features">
         <div class="container">
-            <h2 class="section-title">QR MENYU</h2>
-            <p>Smartfonunuzla skan edin və menyunu birbaşa telefonunuzda görün.</p>
-            <div id="qrcode-container"><div id="qrcode"></div></div>
+            <h2 class="section-title text-center">KEYFİYYƏTİMİZİN SİRRİ</h2>
+            <div class="grid-3">
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="assets/fresh-meat.jpg.png" alt="Təmiz Ət" onerror="this.src='https://images.unsplash.com/photo-1607623814075-e512199b4482?auto=format&fit=crop&w=400&q=80'">
+                    </div>
+                    <h3>Təmiz Ət</h3>
+                    <p>Sizin üçün yalnız gündəlik kəsilmiş, sinirdən təmizlənmiş və keyfiyyətli ətdən istifadə edirik.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="assets/fresh-dough.jpg.png" alt="Təzə Xəmir" onerror="this.src='https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=400&q=80'">
+                    </div>
+                    <h3>Xüsusi Xəmir</h3>
+                    <p>Hər gün əllə yoğurulan, incə və bişərkən xırçıldayan əsl Corat xəmiri.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">
+                        <img src="assets/traditional.jpg.png" alt="Ənənəvi Dad" onerror="this.src='https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?auto=format&fit=crop&w=400&q=80'">
+                    </div>
+                    <h3>Hər kəsin axtardığı dad</h3>
+                    <p>İllərdir dəyişməyən dadımızla hər zaman xidmətinizdəyik.</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Əlaqə -->
     <section class="section contact" id="contact">
         <div class="container">
             <h2 class="section-title text-center">ƏLAQƏ</h2>
             <div class="grid-3">
-                <div class="contact-box">
-                    <i class="icon">📍</i>
-                    <h3>Ünvan</h3>
-                    <p>Corat qəsəbəsi, Sumqayıt</p>
-                </div>
-                <div class="contact-box">
+                <a href="tel:+994557878602" class="contact-box">
                     <i class="icon">📞</i>
-                    <h3>Telefon</h3>
+                    <h3>Zəng Et</h3>
                     <p>+994 55 787 86 02</p>
-                </div>
-                <div class="contact-box">
-                    <i class="icon">🕒</i>
-                    <h3>İş saatları</h3>
-                    <p>09:00 - 23:00</p>
-                </div>
+                </a>
+                <a href="https://wa.me/994557878602" class="contact-box">
+                    <i class="icon">💬</i>
+                    <h3>WhatsApp</h3>
+                    <p>Sifariş üçün yazın</p>
+                </a>
+                <a href="https://instagram.com/pak_corat_qutabi" target="_blank" class="contact-box">
+                    <i class="icon">📸</i>
+                    <h3>Instagram</h3>
+                    <p>@pak_corat_qutabi</p>
+                </a>
             </div>
-            <div class="contact-actions">
-                <a href="tel:+994557878602" class="btn-action call">📞 ZƏNG ET</a>
-                <a href="https://wa.me/994557878602" class="btn-action whatsapp">💬 WHATSAPP</a>
-            </div>
+            
             <div class="map-container">
-                <!-- Sənin xəritə linkin bura əlavə olundu -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.641603511874!2d49.6953288!3d40.5826501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030917208953185%3A0xc3f9829280d2165b!2zUGFrIENvcmF0IFF1dGFiYQ!5e0!3m2!1saz!2saz!4v1709500000000" width="100%" height="450" style="border:0; border-radius:15px;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.641603511874!2d49.6953288!3d40.5826501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030917208953185%3A0xc3f9829280d2165b!2zUGFrIENvcmF0IFF1dGFiYQ!5e0!3m2!1saz!2saz!4v1709500000000" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
 
     <footer class="footer text-center">
-        <p>&copy; 2024 PAK CORAT QUTABI. Hazırladı: Digital Menu System</p>
+        <p>&copy; 2024 PAK CORAT QUTABI</p>
     </footer>
 
     <script src="script.js"></script>
