@@ -10,7 +10,7 @@ function generateQRCode() {
     }
 }
 
-// Kateqoriya keçidləri
+// Kateqoriya Aktivləşdirmə
 const catItems = document.querySelectorAll('.cat-item');
 catItems.forEach(item => {
     item.addEventListener('click', function() {
